@@ -41,6 +41,12 @@ public class Competition24_25 extends LinearOpMode {
     backRight = hardwareMap.get(DcMotor.class, "backRight");
     frontLeft = hardwareMap.get(DcMotor.class, "frontLeft");
     backLeft = hardwareMap.get(DcMotor.class, "backLeft");
+    ControlHub_ServoController = hardwareMap.get(ServoController.class, "servoController");
+    pincher = hardwareMap.get(Servo.class, "pincher");
+    wrist = hardwareMap.get(Servo.class, "wrist");
+    elbow = hardwareMap.get(DcMotor.class, "elbow");
+    lift = hardwareMap.get(DcMotor.class, "lift");
+    shoulder = hardwareMap.get(DcMotor.class, "shoulder");
 
     // Put initialization blocks here.
     telemetry.addData("kkey", 1234);
